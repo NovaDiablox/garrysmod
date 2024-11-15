@@ -10,7 +10,7 @@ hook.Add( "PopulatePostProcess", "AddPostProcess", function( pnlContent, tree, n
 
 		for k, v in pairs( PostProcess ) do
 
-			local newCategory = weapon.Category or language.GetPhrase( "general_other_noname" )
+			local Category = v.category or "#general_other_noname"
 			if ( !isstring( Category ) ) then Category = tostring( Category ) end
 			Categorised[ Category ] = Categorised[ Category ] or {}
 
