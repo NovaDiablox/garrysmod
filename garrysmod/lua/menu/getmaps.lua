@@ -381,7 +381,7 @@ local function RefreshMaps( skip )
 
 		table.insert( MapList[ Category ], name )
 
-		local fav_l10n = language.GetPhrase( "maps_favorites" )
+		local fav_l10n = language.GetPhrase( "newgame_favorites" )
 
 		if ( fav ) then
 			if ( !MapList[ fav_l10n ] ) then
